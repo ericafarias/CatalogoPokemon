@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Pokémon</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="logo">
+                <img src="./assets/logo.png" />
+                <div class="pokebola">
+                    <img src="./assets/pokebola.png" />
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="scroll" id="scroll">
+                    <div
+                        class="raio card"
+                        onmouseover="alterarNome(this,'raiachu');alterarSpan(this,'Raiachu')"
+                        onmouseout=" executarFuncaoSpan(restaurarNome(this,'pikachu'),restaurarSpan(this,'Pikachu'))"
+                    >
+                        <img src="./assets/pikachu.png" />
+                        <span>Pikachu</span>
+                    </div>
+                    <div
+                        class="fogo card"
+                        onmouseover="alterarNome(this,'charizard');alterarSpan(this,'Charizard')"
+                        onmouseout=" executarFuncaoSpan(restaurarNome(this,'charmander'),restaurarSpan(this,'Charmander'))"
+                    >
+                        <img src="./assets/charmander.png" />
+                        <span>Charmander</span>
+                    </div>
+                    <div
+                        class="natureza card"
+                        onmouseover="alterarNome(this,'venusauro'),alterarSpan(this,'Venusauro')"
+                        onmouseout="executarFuncaoSpan(restaurarNome(this,'bulbasaur'),restaurarSpan(this,'Bullbasaur'))"
+                    >
+                        <img src="./assets/bulbasaur.png" />
+                        <span>Bullbasaur</span>
+                    </div>
+                    <div
+                        class="fogo card"
+                        onmouseover="alterarNome(this,'joelton'),alterarSpan(this,'Joelton')"
+                        onmouseout="executarFuncaoSpan(restaurarNome(this,'eevee'),restaurarSpan(this,'Eevee'))"
+                    >
+                        <img src="./assets/eevee.png" />
+                        <span>Eevee</span>
+                    </div>
+                    <div
+                        class="agua card"
+                        onmouseover="alterarNome(this,'MegaBlastoise'),alterarSpan(this,'MegaBlastoise')"
+                        onmouseout="executarFuncaoSpan(restaurarNome(this,'squirtle'),restaurarSpan(this,'Squirtle'))"
+                    >
+                        <img src="./assets/squirtle.png" />
+                        <span>Squirtle</span>
+                    </div>
+                    <div
+                        class="natureza card"
+                        onmouseover="alterarNome(this,'butterfree'),alterarSpan(this,'Butterfree')"
+                        onmouseout="executarFuncaoSpan(restaurarNome(this,'carterpie'),restaurarSpan(this,'Carterpie'))"
+                    >
+                        <img src="./assets/carterpie.png" />
+                        <span>Carterpie</span>
+                    </div>
+                    <div
+                        class="fogo card"
+                        onmouseover="alterarNome(this,'pidgeot'),alterarSpan(this,'Pidgeot')"
+                        onmouseout="executarFuncaoSpan(restaurarNome(this,'Pidgey'),restaurarSpan(this,'Pidgey'))"
+                    >
+                        <img src="./assets/Pidgey.png" />
+                        <span>Pidgey</span>
+                    </div>
+                    <div
+                        class="agua card"
+                        onmouseover="alterarNome(this,'kingler'),alterarSpan(this,'Kingler')"
+                        onmouseout="executarFuncaoSpan(restaurarNome(this,'krabby'),restaurarSpan(this,'krabby'))"
+                    >
+                        <img src="./assets/krabby.png" />
+                        <span>krabby</span>
+                    </div>
+                    <div
+                        class="terra card"
+                        onmouseover="alterarNome(this,'primeape'),alterarSpan(this,'Primeape')"
+                        onmouseout="executarFuncaoSpan(restaurarNome(this,'mankey'),restaurarSpan(this,'Mankey'))"
+                    >
+                        <img src="./assets/mankey.png" />
+                        <span>Mankey</span>
+                    </div>
+                    <div
+                        class="agua card"
+                        onmouseover="alterarNome(this,'lapras'),alterarSpan(this,'Lapras')"
+                        onmouseout="executarFuncaoSpan(restaurarNome(this,'amaura'),restaurarSpan(this,'Amaura'))"
+                    >
+                        <img src="./assets/amaura.png" />
+                        <span>Amaura</span>
+                    </div>
+                </div>
+            </div>
+            <div class="botoes">
+                <button onclick="anterior()">Anterior</button>
+                <button onclick="proxima()">Proxímo</button>
+            </div>
+        </div>
+
+        <script type="text/javaScript" src="./scriptApi.js"></script>
+    </body>
+</html>
