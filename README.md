@@ -19,7 +19,7 @@ Este é um projeto simples que carrega imagens e nomes de Pokémon usando a [Pok
 
 1. Clone este repositório para o seu computador:
 
-   git clone https://github.com/seu-usuario/pokemon-api-viewer.git
+   git clone https://github.com/ericafarias/CatalogoPokemon.git
 
 2. Navegue até a pasta do projeto.
 3. Abra o arquivo index.html no seu navegador.
